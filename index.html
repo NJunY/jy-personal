@@ -34,7 +34,7 @@
         }
 
         .banner{
-            background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('banner-bg.jpg');
+            background-image: url('banner-bg.jpg');
             /* background-attachment: fixed; */
             background-repeat: no-repeat;
             background-position: center;
@@ -71,7 +71,7 @@
         }
 
         .skill{
-            background-image: linear-gradient( #1488CC,#2B32B2);
+            background-image: linear-gradient(to right,black,#2B32B2, #1488CC);
             color: transparent;
         }
 
@@ -122,6 +122,21 @@
             color: black;
             border: none;
             font-family: 'Montserrat', sans-serif;
+        }
+
+        #contact{
+            background-color: white;
+            color: black;
+        }
+
+        .social{
+            font-size: 45px;
+        }
+
+        @media(max-width: 767px){
+            .social{
+                font-size: 25px;
+            }
         }
     </style>
 </head>
@@ -194,7 +209,7 @@
                         <h1 class="mb-3 big-title">Development Skills</h1>
                         <div class="container-fluid my-3">
                             <div class="d-flex flex-row">
-                                <h3 class="col-6">Web Development (HTML, bootstrap)</h3>
+                                <h4 class="col-6">Web Development (HTML, bootstrap)</h4>
                                 <div class="container col-6 skill-container">
                                     <div class="skill s-90">
                                         90%
@@ -202,7 +217,7 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-row">
-                                <h3 class="col-6">Machine Learning (Python)</h3>
+                                <h4 class="col-6">Machine Learning (Python)</h4>
                                 <div class="container col-6 skill-container">
                                     <div class="skill s-60">
                                         60%
@@ -210,7 +225,7 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-row">
-                                <h3 class="col-6">PHP (Laravel)</h3>
+                                <h4 class="col-6">PHP (Laravel)</h4>
                                 <div class="container col-6 skill-container">
                                     <div class="skill s-60">
                                         60%
@@ -218,7 +233,7 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-row">
-                                <h3 class="col-6">JS (Vue, Jquery)</h3>
+                                <h4 class="col-6">JS (Vue, Jquery)</h4>
                                 <div class="container col-6 skill-container">
                                     <div class="skill s-70">
                                         70%
@@ -226,7 +241,7 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-row">
-                                <h3 class="col-6">Flutter</h3>
+                                <h4 class="col-6">Flutter</h4>
                                 <div class="container col-6 skill-container">
                                     <div class="skill s-50">
                                         50%
@@ -234,7 +249,7 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-row">
-                                <h3 class="col-6">Java</h3>
+                                <h4 class="col-6">Java</h4>
                                 <div class="container col-6 skill-container">
                                     <div class="skill s-50">
                                         50%
@@ -247,7 +262,7 @@
                         <h1 class="mb-3 big-title">Soft Skill</h1>
                         <div class="container-fluid my-3">
                             <div class="d-flex flex-row">
-                                <h3 class="col-6">Communication</h3>
+                                <h4 class="col-6">Communication</h4>
                                 <div class="container col-6 skill-container">
                                     <div class="skill s-70">
                                         .
@@ -255,7 +270,7 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-row">
-                                <h3 class="col-6">Team Work</h3>
+                                <h4 class="col-6">Team Work</h4>
                                 <div class="container col-6 skill-container">
                                     <div class="skill s-80">
                                         .
@@ -263,7 +278,7 @@
                                 </div>
                             </div> 
                             <div class="d-flex flex-row">
-                                <h3 class="col-6">Presentation</h3>
+                                <h4 class="col-6">Presentation</h4>
                                 <div class="container col-6 skill-container">
                                     <div class="skill s-60">
                                         .
@@ -271,7 +286,7 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-row">
-                                <h3 class="col-6">Time Management</h3>
+                                <h4 class="col-6">Time Management</h4>
                                 <div class="container col-6 skill-container">
                                     <div class="skill s-80">
                                         .
@@ -279,7 +294,7 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-row">
-                                <h3 class="col-6">Task Management</h3>
+                                <h4 class="col-6">Task Management</h4>
                                 <div class="container col-6 skill-container">
                                     <div class="skill s-80">
                                         .
@@ -287,7 +302,7 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-row">
-                                <h3 class="col-6">Logical Thinking</h3>
+                                <h4 class="col-6">Logical Thinking</h4>
                                 <div class="container col-6 skill-container">
                                     <div class="skill s-80">
                                         .
@@ -448,7 +463,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 my-3 my-md-0">
                             <div class="card">
                                 <img src="mobile.jpg" class="card-img-top" alt="..." style="max-height: 232px;">
                                 <div class="card-body">
@@ -473,7 +488,69 @@
 
         <!-- CONTACT -->
         <section id="contact">
-
+            <div class="container">
+                <div class="d-flex flex-column">
+                    <div class="d-flex flex-column">
+                        <h1 class="text-center big-title">Contact</h1>
+                        <div class="text-center">
+                            <h6 class="big-title">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. </h6>
+                        </div>
+                        <div class="row my-4 text-center">
+                            <div class="col-3">
+                                <button class="btn">
+                                    <i class="bi bi-discord social"></i>
+                                </button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn">
+                                    <i class="bi bi-whatsapp social"></i>
+                                </button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-lg">
+                                    <i class="bi bi-wechat social"></i>
+                                </button>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-lg">
+                                    <i class="bi bi-instagram social"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9">
+                            <form action="">
+                                <div class="row my-3">
+                                    <div class="col-md-6 my-md-0 mb-3">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" placeholder="NAME">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" placeholder="EMAIL">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="subject" placeholder="SUBJECT">
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="form-group">
+                                        <textarea name="CONTENT" id="" rows="10" class="form-control" style="resize: none;"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary the-button w-100" style="background-color: black; border: none;">SUBMIT</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 
