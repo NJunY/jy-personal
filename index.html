@@ -9,7 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <style>
         nav li a{
             font-family: 'Playfair Display', serif;
@@ -17,27 +20,108 @@
 
         .bg-dark{
             background-color: black !important; 
-            color: #828282;
+            /* color: #828282; */
         }
 
         .big-title{
-            font-family: 'Josefin Sans', sans-serif;
+            /* font-family: 'Josefin Sans', sans-serif; */
+            font-family: 'Playfair Display', serif;
+        }
+
+        section{
+            padding-top: 50px;
+            padding-bottom: 50px;
         }
 
         .banner{
-            padding-top: 50px;
-            padding-bottom: 50px;
+            background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('banner-bg.jpg');
+            /* background-attachment: fixed; */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
             background-color: black;
             color: white;
+
         }
 
         #banner-desc{
-            color: #828282;
+            /* color: #828282; */
         }
 
         .the-button{
             background-color: #3399ff;
             color: white;
+            font-family: 'Playfair Display', serif;
+        }
+
+        #about{
+            background-color: black;
+            color: white;
+        }
+
+        #skill{
+            background-color: black;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .skill-container{
+            /* width: 100%; */
+            /* background-color: grey; */
+        }
+
+        .skill{
+            background-image: linear-gradient( #1488CC,#2B32B2);
+            color: transparent;
+        }
+
+        .s-50{
+            width: 50%;
+        }
+
+        .s-60{
+            width: 60%;
+        }
+
+        .s-70{
+            width: 70%;
+        }
+
+        .s-80{
+            width: 80%;
+        }
+
+        .s-90{
+            width: 90%;
+        }
+
+        .s-100{
+            width: 100%;
+        }
+
+        #project{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("project-bg.jpg");
+            /* background-position: center; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        .project .card{
+            background-color: black;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #service{
+            background-color: black;
+            color: white;
+        }
+
+        #service .card{
+            color: black;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
         }
     </style>
 </head>
@@ -46,34 +130,36 @@
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid d-flex flex-md-column flex-row">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-md-auto">
                     <li class="nav-item mx-md-4">
-                        <a class="nav-link" href="#"><h4>About</h4></a>
+                        <a class="nav-link" href="#banner"><h4>Home</h4></a>
                     </li>
                     <li class="nav-item mx-md-4">
-                        <a class="nav-link" href="#"><h4>Gallery</h4></a>
+                        <a class="nav-link" href="#skill"><h4>Skill</h4></a>
                     </li>
                     <li class="nav-item mx-md-4">
-                        <a class="nav-link" href="#"><h4>Service</h4></a>
+                        <a class="nav-link" href="#project"><h4>Gallery</h4></a>
                     </li>
                     <li class="nav-item mx-md-4">
-                        <a class="nav-link" href="#"><h4>Contact</h4></a>
+                        <a class="nav-link" href="#service"><h4>Service</h4></a>
+                    </li>
+                    <li class="nav-item mx-md-4">
+                        <a class="nav-link" href="#contact"><h4>Contact</h4></a>
                     </li>
                 </ul>
                 </div>
             </div>
         </nav>
 
-        <section class="banner">
+        <section id="banner" class="banner">
             <div class="container">
                 <div class="row">
                     <div class="col-0 col-md-2">
-
                     </div>
                     <div class="col-12 col-md-8">
                         <div class="d-flex flex-column text-center big-title">
@@ -85,7 +171,7 @@
                                 <h1>From Malaysia</h1>
                             </div>
                             <div class="pt-3 pb-4 d-flex flex-row justify-content-center" id="banner-desc">
-                                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tempora iste fugit perferendis ipsum voluptates debitis</h5>
+                                <h5>Passionate about several developments such as App Development, Web Development, AI Development, and IoT Development.</h5>
                             </div>
                             <div class="">
                                 <a href="#">
@@ -95,10 +181,299 @@
                         </div>
                     </div>
                     <div class="col-0 col-md-2">
-
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- SKILL -->
+        <section id="skill">
+            <div class="container">
+                <div class="d-flex flex-column">
+                    <div class="d-flex flex-column align-items-center">
+                        <h1 class="mb-3 big-title">Development Skills</h1>
+                        <div class="container-fluid my-3">
+                            <div class="d-flex flex-row">
+                                <h3 class="col-6">Web Development (HTML, bootstrap)</h3>
+                                <div class="container col-6 skill-container">
+                                    <div class="skill s-90">
+                                        90%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <h3 class="col-6">Machine Learning (Python)</h3>
+                                <div class="container col-6 skill-container">
+                                    <div class="skill s-60">
+                                        60%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <h3 class="col-6">PHP (Laravel)</h3>
+                                <div class="container col-6 skill-container">
+                                    <div class="skill s-60">
+                                        60%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <h3 class="col-6">JS (Vue, Jquery)</h3>
+                                <div class="container col-6 skill-container">
+                                    <div class="skill s-70">
+                                        70%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <h3 class="col-6">Flutter</h3>
+                                <div class="container col-6 skill-container">
+                                    <div class="skill s-50">
+                                        50%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <h3 class="col-6">Java</h3>
+                                <div class="container col-6 skill-container">
+                                    <div class="skill s-50">
+                                        50%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-center">
+                        <h1 class="mb-3 big-title">Soft Skill</h1>
+                        <div class="container-fluid my-3">
+                            <div class="d-flex flex-row">
+                                <h3 class="col-6">Communication</h3>
+                                <div class="container col-6 skill-container">
+                                    <div class="skill s-70">
+                                        .
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <h3 class="col-6">Team Work</h3>
+                                <div class="container col-6 skill-container">
+                                    <div class="skill s-80">
+                                        .
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="d-flex flex-row">
+                                <h3 class="col-6">Presentation</h3>
+                                <div class="container col-6 skill-container">
+                                    <div class="skill s-60">
+                                        .
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <h3 class="col-6">Time Management</h3>
+                                <div class="container col-6 skill-container">
+                                    <div class="skill s-80">
+                                        .
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <h3 class="col-6">Task Management</h3>
+                                <div class="container col-6 skill-container">
+                                    <div class="skill s-80">
+                                        .
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <h3 class="col-6">Logical Thinking</h3>
+                                <div class="container col-6 skill-container">
+                                    <div class="skill s-80">
+                                        .
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="project" class="project">
+            <div class="d-flex flex-column">
+                <div class="text-center mb-4">
+                    <h1 class="big-title" style="color: white;">PROJECT GALLERY</h1>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 my-3 my-md-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">G.E.A.R. MK-1</h3>
+                                    <h6 class="card-subtitle">Python, RaspberryPi, OpenCV</h6>
+                                    <p class="card-text my-3">
+                                        A robot project which can do scripted chatting, object detection, and remote controlling.
+                                    </p>
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <a href="#" class="d-flex flex-row justify-content-center">
+                                            <button class="btn btn-dark btn-lg">
+                                                <i class="bi bi-github"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3 my-md-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Moviery</h3>
+                                    <h6 class="card-subtitle">Flutter, Android Studio</h6>
+                                    <p class="card-text my-3">
+                                        A Mobile App for searching movies' information through TMDB's API
+                                    </p>
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <a href="#">
+                                            <button class="btn btn-dark btn-lg">
+                                                <i class="bi bi-github"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3 my-md-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Tic Tac Toe</h3>
+                                    <h6 class="card-subtitle">Java, Android Studio</h6>
+                                    <p class="card-text mt-3 mb-4">
+                                        An Android Tic Tac Toe Game For Two Players
+                                    </p>
+                                    <div class="d-flex flex-row justify-content-center pt-3">
+                                        <a href="#">
+                                            <button class="btn btn-dark btn-lg">
+                                                <i class="bi bi-github"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-5">
+                        <div class="col-md-4 my-3 my-md-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Project Title</h3>
+                                    <h6 class="card-subtitle">Programming Language</h6>
+                                    <p class="card-text my-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tempore aut eaque placeat quaerat error nam eveniet eligendi magnam veniam, harum odio veritatis facilis beatae amet.
+                                    </p>
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <a href="#">
+                                            <button class="btn btn-dark btn-lg">
+                                                <i class="bi bi-github"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3 my-md-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Project Title</h3>
+                                    <h6 class="card-subtitle">Programming Language</h6>
+                                    <p class="card-text my-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tempore aut eaque placeat quaerat error nam eveniet eligendi magnam veniam, harum odio veritatis facilis beatae amet.
+                                    </p>
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <a href="#">
+                                            <button class="btn btn-dark btn-lg">
+                                                <i class="bi bi-github"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3 my-md-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">Project Title</h3>
+                                    <h6 class="card-subtitle">Programming Language</h6>
+                                    <p class="card-text my-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tempore aut eaque placeat quaerat error nam eveniet eligendi magnam veniam, harum odio veritatis facilis beatae amet.
+                                    </p>
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <a href="#">
+                                            <button class="btn btn-dark btn-lg">
+                                                <i class="bi bi-github"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICE -->
+        <section id="service">
+            <div class="container mb-4">
+                <div class="d-flex flex-column">
+                    <div class="text-center">
+                        <h1 class="big-title">SERVICES</h1>
+                    </div>
+                    <div class="text-center my-3">
+                        <h5 class="big-title">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</h5>
+                    </div>
+                    <div class="text-center my-4">
+                        <a href="#">
+                            <button class="btn the-button mb-4">Drop A Message</button>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="web.jpg" class="card-img-top" alt="..." style="max-height: 232px;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Web Development</h5>
+                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="mobile.jpg" class="card-img-top" alt="..." style="max-height: 232px;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Mobile App Development</h5>
+                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="ai.jpg" class="card-img-top" alt="..." style="max-height: 232px;">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">AI Development</h5>
+                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+
         </section>
     </div>
 
@@ -107,7 +482,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js" integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         new Typed('#my-titles', {
-            strings: ['Software Engineer', 'Web Developer'],
+            strings: ['Software Engineer', 'Web Developer', 'Machine Learning Enthusiast', 'Mobile App Developer', 'Robotic Enthusiast'],
             typeSpeed: 100,
             backSpeed: 50,
             fadeOut: true,
