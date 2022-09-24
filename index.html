@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ng Jun Yi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        nav li a{
+            font-family: 'Playfair Display', serif;
+        }
+
+        .bg-dark{
+            background-color: black !important;
+            color: #828282;
+        }
+
+        .big-title{
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .banner{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: black;
+            color: white;
+        }
+
+        #banner-desc{
+            color: #828282;
+        }
+
+        .the-button{
+            background-color: #3399ff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid d-flex flex-md-column flex-row">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-md-auto">
+                    <li class="nav-item mx-md-4">
+                        <a class="nav-link" href="#"><h4>About</h4></a>
+                    </li>
+                    <li class="nav-item mx-md-4">
+                        <a class="nav-link" href="#"><h4>Gallery</h4></a>
+                    </li>
+                    <li class="nav-item mx-md-4">
+                        <a class="nav-link" href="#"><h4>Service</h4></a>
+                    </li>
+                    <li class="nav-item mx-md-4">
+                        <a class="nav-link" href="#"><h4>Contact</h4></a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-0 col-md-2">
+
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="d-flex flex-column text-center big-title">
+                            <div class="">
+                                <h1>I am Ng Jun Yi</h1>
+                            </div>
+                            <div class="">
+                                <h1 id="">A <span id="my-titles"></span></h1>
+                                <h1>From Malaysia</h1>
+                            </div>
+                            <div class="pt-3 pb-4 d-flex flex-row justify-content-center" id="banner-desc">
+                                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tempora iste fugit perferendis ipsum voluptates debitis</h5>
+                            </div>
+                            <div class="">
+                                <a href="#">
+                                    <button class="btn the-button">Drop A Message</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-0 col-md-2">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js" integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new Typed('#my-titles', {
+            strings: ['Software Engineer', 'Web Developer'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            fadeOut: true,
+            loop: true,
+        });
+    </script>
+</body>
+</html>
